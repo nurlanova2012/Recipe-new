@@ -7,9 +7,8 @@
 }
 
 body {
-  max-width: 750px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 50px;
   font-family: Heebo, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -22,7 +21,7 @@ h1 {
   font-weight: 600;
   font-size: 3.5rem;
   color: #342b1b;
-  line-height: 24px;
+  line-height: 3.5rem;
 }
 
 h2 {
@@ -45,7 +44,6 @@ li {
 }
 .content-img {
   border-radius: 20px;
-  width: 750px;
 }
 .top-section {
   margin-bottom: 35px;
@@ -63,4 +61,28 @@ td {
 }
 tr {
   border-bottom: 1px solid;
+}
+
+/*MOBILE VERSION*/
+@media (max-width: 670px) {
+  .content-img {
+    width: 100%;
+    border-radius: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .top-section {
+    margin-bottom: 0px;
+  }
+  .middle-section {
+    padding: 10px;
+  }
+  td {
+    padding-right: 150px;
+  }
 }
